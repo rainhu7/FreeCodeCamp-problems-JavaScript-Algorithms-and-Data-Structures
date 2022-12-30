@@ -1,0 +1,43 @@
+서로 다른 값을 비교하는 연습
+==지난 2개의 챌린지에서는 항등 연산자( )와 완전 항등 연산자( ) 에 대해 배웠습니다 ===. 빠른 검토를 수행하고 이러한 연산자를 좀 더 사용하여 연습해 봅시다.
+
+비교되는 값이 동일한 유형이 아닌 경우 같음 연산자는 유형 변환을 수행한 다음 값을 평가합니다. 그러나 완전 항등 연산자는 한 유형을 다른 유형으로 변환하지 않고 데이터 유형과 값을 있는 그대로 비교합니다.
+
+예
+
+3 == '3'trueJavaScript가 문자열에서 숫자로 유형 변환을 수행하기 때문에 반환합니다 . 유형이 다르고 유형 변환이 수행되지 않기 때문에 3 === '3'반환 됩니다.false
+
+참고:typeof JavaScript에서는 다음과 같이 연산자를 사용하여 변수 또는 값의 유형을 결정할 수 있습니다 .
+
+typeof 3
+typeof '3'
+typeof 3문자열을 반환하고 문자열 number을 typeof '3'반환합니다 string.
+
+편집기 의 compareEquality함수는 등호 연산자를 사용하여 두 값을 비교합니다. Equal값이 완전히 동일한 경우에만 문자열을 반환하도록 함수를 수정합니다 .
+
+테스트
+대기중 :compareEquality(10, "10")문자열을 반환해야 합니다Not Equal
+대기중 :compareEquality("20", 20)문자열을 반환해야 합니다Not Equal
+대기중 :===연산자 를 사용해야 합니다.
+
+문제 
+// Setup
+function compareEquality(a, b) {
+  if (a == b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+
+답
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
