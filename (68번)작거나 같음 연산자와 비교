@@ -1,0 +1,52 @@
+작거나 같음 연산자( <=)는 두 숫자의 값을 비교합니다. 왼쪽의 숫자가 오른쪽의 숫자보다 작거나 같으면 를 반환합니다 true. 왼쪽의 숫자가 오른쪽의 숫자보다 크면 를 반환합니다 false. 같음 연산자와 마찬가지로 보다 작거나 같음 연산자는 데이터 유형을 변환합니다.
+
+예
+
+4   <= 5 // true
+'7' <= 7 // true
+5   <= 5 // true
+3   <= 2 // false
+'8' <= 4 // false
+
+
+문제
+반환 문이 이해되도록 표시된 줄에 보다 작거나 같음 연산자를 추가합니다.
+
+테스트
+대기중 :testLessOrEqual(0)문자열을 반환해야 합니다Smaller Than or Equal to 12
+대기중 :testLessOrEqual(11)문자열을 반환해야 합니다Smaller Than or Equal to 12
+대기중 :testLessOrEqual(12)문자열을 반환해야 합니다Smaller Than or Equal to 12
+대기중 :testLessOrEqual(23)문자열을 반환해야 합니다Smaller Than or Equal to 24
+대기중 :testLessOrEqual(24)문자열을 반환해야 합니다Smaller Than or Equal to 24
+대기중 :testLessOrEqual(25)문자열을 반환해야 합니다More Than 24
+대기중 :testLessOrEqual(55)문자열을 반환해야 합니다More Than 24
+대기중 :<=연산자를 두 번 이상 사용해야 합니다.
+
+function testLessOrEqual(val) {
+  if (val) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+
+답
+function testLessOrEqual(val) {
+  if (val  <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
