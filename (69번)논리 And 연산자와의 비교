@@ -1,0 +1,64 @@
+논리 And 연산자와의 비교
+때로는 한 번에 둘 이상의 항목을 테스트해야 합니다. 논리 and 연산자( &&)는 왼쪽 과 오른쪽의 피연산자 가 참인 true경우에만 반환합니다.
+
+다른 if 안에 if 문을 중첩하여 동일한 효과를 얻을 수 있습니다.
+
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+보다 크고 작은 경우 Yes에만 반환 됩니다 . 동일한 논리를 다음과 같이 작성할 수 있습니다.num510
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+
+문제
+&&연산자를 사용하여 두 개의 if 문을 하나의 문으로 바꿉니다. Yesif val가 작거나 같음 50및 크 거나 같음 문자열을 반환합니다 25. 그렇지 않으면 문자열을 반환합니다 No.
+
+테스트
+대기중 :&&연산자를 한 번 사용해야 합니다.
+대기중 :if진술 은 하나만 있어야 합니다 .
+대기중 :testLogicalAnd(0)문자열을 반환해야 합니다No
+대기중 :testLogicalAnd(24)문자열을 반환해야 합니다No
+대기중 :testLogicalAnd(25)문자열을 반환해야 합니다Yes
+대기중 :testLogicalAnd(30)문자열을 반환해야 합니다Yes
+대기중 :testLogicalAnd(50)문자열을 반환해야 합니다Yes
+대기중 :testLogicalAnd(51)문자열을 반환해야 합니다No
+대기중 :testLogicalAnd(75)문자열을 반환해야 합니다No
+대기중 :testLogicalAnd(80)문자열을 반환해야 합니다No
+
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val) {
+    if (val) {
+      return "Yes";
+    }
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
+
+
+답
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val >= 25 && val <=50) {
+    
+      return "Yes";
+    
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(10);
