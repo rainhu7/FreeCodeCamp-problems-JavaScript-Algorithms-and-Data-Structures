@@ -1,0 +1,67 @@
+논리 OR 연산자와의 비교
+논리 or 연산자( ||)는 피연산자 중 하나 가 true이면 반환합니다 . 그렇지 않으면 를 반환합니다 .truefalse
+
+논리 or 연산자는 두 개의 파이프 기호( ||)로 구성됩니다. 이것은 일반적으로 백스페이스 키와 Enter 키 사이에서 찾을 수 있습니다.
+
+아래 패턴은 이전 경유지에서 친숙하게 보일 것입니다.
+
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+~ 사이 인 Yes경우에만 반환 됩니다 (5 ~ 10 포함). 동일한 논리를 다음과 같이 작성할 수 있습니다.num510
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+
+문제
+두 if문을 하나의 문으로 결합하여 if가 와 사이에 있지 않은 Outside경우 문자열을 반환 합니다. 그렇지 않으면 문자열을 반환합니다 .val1020Inside
+
+테스트
+대기중 :||연산자를 한 번 사용해야 합니다.
+대기중 :if진술 은 하나만 있어야 합니다 .
+대기중 :testLogicalOr(0)문자열을 반환해야 합니다Outside
+대기중 :testLogicalOr(9)문자열을 반환해야 합니다Outside
+대기중 :testLogicalOr(10)문자열을 반환해야 합니다Inside
+대기중 :testLogicalOr(15)문자열을 반환해야 합니다Inside
+대기중 :testLogicalOr(19)문자열을 반환해야 합니다Inside
+대기중 :testLogicalOr(20)문자열을 반환해야 합니다Inside
+대기중 :testLogicalOr(21)문자열을 반환해야 합니다Outside
+대기중 :testLogicalOr(25)문자열을 반환해야 합니다Outside
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val) {
+    return "Outside";
+  }
+
+  if (val) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+답
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val > 20 || val < 10) {
+    return "Outside";
+  }
+
+
+  // Only change code above this line
+  return "Inside";
+}
+
+testLogicalOr(15);
