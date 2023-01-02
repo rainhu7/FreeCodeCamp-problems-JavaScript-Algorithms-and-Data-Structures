@@ -5,7 +5,6 @@ JavaScript 알고리즘 및 데이터 구조
 
 참고: 부울 값은 따옴표로 쓰지 않습니다. 문자열 "true"및 "false"은 부울이 아니며 JavaScript에서 특별한 의미가 없습니다.
 
-실행 버튼을 클릭했을 때 대신 welcomeToBooleans반환되도록 함수를 수정합니다 .truefalse
 
 테스트
 대기중 :함수 는 welcomeToBooleans()부울( true또는 false) 값을 반환해야 합니다.
@@ -13,6 +12,7 @@ JavaScript 알고리즘 및 데이터 구조
 
 
 
+실행 버튼을 클릭했을 때 대신 welcomeToBooleans반환되도록 함수를 수정합니다 .truefalse
 
 문제
 function welcomeToBooleans() {
