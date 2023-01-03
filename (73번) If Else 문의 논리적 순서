@@ -1,0 +1,67 @@
+If Else 문의 논리적 순서
+if, else if문 에서는 순서가 중요 합니다.
+
+이 함수는 위에서 아래로 실행되므로 어떤 명령문이 먼저 오는지 주의해야 합니다.
+
+이 두 함수를 예로 들어 보겠습니다.
+
+첫 번째는 다음과 같습니다.
+
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+두 번째는 명령문의 순서를 전환합니다.
+
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+이 두 함수는 거의 동일해 보이지만 두 함수에 숫자를 전달하면 서로 다른 출력을 얻습니다.
+
+foo(0)
+bar(0)
+foo(0)문자열을 반환하고 문자열 Less than one을 bar(0)반환합니다 Less than two.
+
+문제
+모든 경우에 올바른 명령문을 반환하도록 함수의 논리 순서를 변경합니다.
+
+테스트
+대기중 :orderMyLogic(4)문자열을 반환해야 합니다Less than 5
+대기중 :orderMyLogic(6)문자열을 반환해야 합니다Less than 10
+대기중 :orderMyLogic(11)문자열을 반환해야 합니다Greater than or equal to 10
+
+function orderMyLogic(val) {
+  if (val < 10) {
+    return "Less than 10";
+  } else if (val < 5) {
+    return "Less than 5";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
+
+답
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
