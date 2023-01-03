@@ -1,0 +1,49 @@
+Else If 문 소개
+해결해야 할 여러 조건이 있는 경우 if문과 함께 문 을 연결할 수 있습니다 else if.
+
+if (num > 15) {
+  return "Bigger than 15";
+} else if (num < 5) {
+  return "Smaller than 5";
+} else {
+  return "Between 5 and 15";
+}
+
+문제
+else if 문 을 사용하도록 논리를 변환합니다 
+
+테스트
+대기중 :else두 개 이상의 진술 이 있어야 합니다 .
+대기중 :if두 개 이상의 진술 이 있어야 합니다 .
+대기중 :if else각 코드 블록 에 닫는 중괄호와 여는 중괄호가 있어야 합니다 .
+대기중 :testElseIf(0)문자열을 반환해야 합니다Smaller than 5
+대기중 :testElseIf(5)문자열을 반환해야 합니다Between 5 and 10
+대기중 :testElseIf(7)문자열을 반환해야 합니다Between 5 and 10
+대기중 :testElseIf(10)문자열을 반환해야 합니다Between 5 and 10
+대기중 :testElseIf(12)문자열을 반환해야 합니다Greater than 10
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+
+  if (val < 5) {
+    return "Smaller than 5";
+  }
+
+  return "Between 5 and 10";
+}
+
+testElseIf(7);
+
+답
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+}
+}
+testElseIf(7);
