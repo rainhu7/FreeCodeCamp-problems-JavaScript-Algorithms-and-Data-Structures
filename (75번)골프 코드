@@ -1,0 +1,65 @@
+골프 코드
+골프 게임에서 각 홀에는 플레이를 완료하기 위해 공을 홀에 가라앉히기 위해 예상되는 골퍼 par의 평균 수를 의미하는 가 있습니다. 당신 이 strokes얼마나 위 또는 아래에 있는지에 따라 다른 별명이 있습니다.parstrokes
+
+귀하의 기능이 전달 par되고 strokes인수됩니다. 우선 순위에 따라 스트로크를 나열하는 이 표에 따라 올바른 문자열을 반환합니다. 상단(가장 높음)에서 하단(가장 낮음)으로:
+
+스트로크	반품
+1	"홀인원!"
+<= 파 - 2	"독수리"
+파 - 1	"버디"
+평가	"평가"
+파 + 1	"보기"
+파 + 2	"더블 보기"
+>= 파 + 3	"집에가!"
+
+문제
+parstrokes항상 숫자이고 양수입니다 . 귀하의 편의를 위해 모든 이름의 배열을 추가했습니다.
+
+테스트
+대기중 :golfScore(4, 1)문자열을 반환해야 합니다Hole-in-one!
+대기중 :golfScore(4, 2)문자열을 반환해야 합니다Eagle
+대기중 :golfScore(5, 2)문자열을 반환해야 합니다Eagle
+대기중 :golfScore(4, 3)문자열을 반환해야 합니다Birdie
+대기중 :golfScore(4, 4)문자열을 반환해야 합니다Par
+대기중 :golfScore(1, 1)문자열을 반환해야 합니다Hole-in-one!
+대기중 :golfScore(5, 5)문자열을 반환해야 합니다Par
+대기중 :golfScore(4, 5)문자열을 반환해야 합니다Bogey
+대기중 :golfScore(4, 6)문자열을 반환해야 합니다Double Bogey
+대기중 :golfScore(4, 7)문자열을 반환해야 합니다Go Home!
+대기중 :golfScore(5, 9)문자열을 반환해야 합니다Go Home!
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+golfScore(5, 4);
+
+답
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1){
+    return "Hole-in-one!"
+  } else if (strokes <= par - 2) {
+    return "Eagle"
+  } else if (strokes == par - 1) {
+    return "Birdie"
+  } else if (strokes == par) {
+    return "Par"
+  } else if (strokes == par + 1) {
+    return "Bogey"
+  } else if (strokes == par + 2) {
+    return "Double Bogey"
+  } else (strokes >= par + 3) 
+    return "Go Home!";
+  // Only change code above this line
+}
+
+golfScore(5, 4);
