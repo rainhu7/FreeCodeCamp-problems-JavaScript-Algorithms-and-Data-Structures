@@ -1,0 +1,57 @@
+Else 문 소개
+문 에 대한 조건 if이 참이면 그 뒤의 코드 블록이 실행됩니다. 그 조건이 거짓일 때는 어떻습니까? 일반적으로 아무 일도 일어나지 않을 것입니다. 명령문을 사용 else하면 대체 코드 블록을 실행할 수 있습니다.
+
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+
+문제
+if명령문을 단일 명령문으로 결합합니다 if/else.
+
+테스트
+대기중 :if편집기 에는 하나의 문만 있어야 합니다 .
+대기중 :else당신은 진술 을 사용해야합니다
+대기중 :testElse(4)문자열을 반환해야 합니다5 or Smaller
+대기중 :testElse(5)문자열을 반환해야 합니다5 or Smaller
+대기중 :testElse(6)문자열을 반환해야 합니다Bigger than 5
+대기중 :testElse(10)문자열을 반환해야 합니다Bigger than 5
+대기중 :지정된 주석 위 또는 아래의 코드를 변경하면 안됩니다.
+
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+
+  if (val <= 5) {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
+
+답
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+   } else {
+
+  
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+testElse(4);
