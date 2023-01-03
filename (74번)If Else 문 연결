@@ -1,0 +1,66 @@
+If Else 문 연결
+if/else복잡한 논리를 위해 명령문을 함께 연결할 수 있습니다. 다음은 다중 연결된 / 문의 의사 코드 입니다.ifelse if
+
+if (condition1) {
+  statement1
+} else if (condition2) {
+  statement2
+} else if (condition3) {
+  statement3
+. . .
+} else {
+  statementN
+}
+
+문제
+다음 조건을 충족하도록 연결된 if/else if 문을 작성합니다.
+
+num < 5-반환 Tiny
+num < 10-반환 Small
+num < 15-반환 Medium
+num < 20-반환 Large
+num >= 20-반환Huge
+
+테스트
+대기중 :최소한 4개의 else진술 이 있어야 합니다.
+대기중 :최소한 4개의 if진술 이 있어야 합니다.
+대기중 :최소한 하나의 return진술 이 있어야 합니다.
+대기중 :testSize(0)문자열을 반환해야 합니다Tiny
+대기중 :testSize(4)문자열을 반환해야 합니다Tiny
+대기중 :testSize(5)문자열을 반환해야 합니다Small
+대기중 :testSize(8)문자열을 반환해야 합니다Small
+대기중 :testSize(10)문자열을 반환해야 합니다Medium
+대기중 :testSize(14)문자열을 반환해야 합니다Medium
+대기중 :testSize(15)문자열을 반환해야 합니다Large
+대기중 :testSize(17)문자열을 반환해야 합니다Large
+대기중 :testSize(20)문자열을 반환해야 합니다Huge
+대기중 :testSize(25)문자열을 반환해야 합니다Huge
+
+function testSize(num) {
+  // Only change code below this line
+
+
+  return "Change Me";
+  // Only change code above this line
+}
+
+testSize(7);
+
+답
+function testSize(num) {
+  // Only change code below this line
+  if (num < 5) {
+    return "Tiny"
+  } else if (num < 10) {
+    return "Small"
+  } else if (num < 15) {
+    return "Medium"
+  } else if (num < 20) {
+    return "Large"
+  } else (num >= 20) 
+    return "Huge";
+  
+  // Only change code above this line
+}
+
+testSize(7);
