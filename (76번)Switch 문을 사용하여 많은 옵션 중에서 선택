@@ -1,0 +1,54 @@
+선택할 수 있는 옵션이 많으면 switch 문을 사용하십시오. switch문은 값을 테스트하고 다양한 가능한 값을 정의하는 많은 case 문을 가질 수 있습니다. 명령문은 a 를 만날 때까지 첫 번째 일치 case값부터 실행됩니다.break
+
+다음은 switch진술의 예입니다.
+
+switch (lowercaseLetter) {
+  case "a":
+    console.log("A");
+    break;
+  case "b":
+    console.log("B");
+    break;
+}
+case값은 엄격한 동등성( ===)으로 테스트됩니다. 명령문 실행을 중지하도록 JavaScript 에 break지시합니다. 생략 하면 break다음 문이 실행됩니다.
+
+
+문제
+다음 조건 을 테스트 val하고 설정 하는 switch 문을 작성합니다 . - - - -answer
+1alpha
+2beta
+3gamma
+4delta
+
+테스트
+대기중 :caseInSwitch(1)문자열 값을 가져야 합니다.alpha
+대기중 :caseInSwitch(2)문자열 값을 가져야 합니다.beta
+대기중 :caseInSwitch(3)문자열 값을 가져야 합니다.gamma
+대기중 :caseInSwitch(4)문자열 값을 가져야 합니다.delta
+대기중 :if또는 else문 을 사용하면 안 됩니다.
+대기중 :break최소 3개의 진술 이 있어야 합니다 .
+
+답
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+      answer = ("alpha")
+      break;
+    case 2:
+      answer = ("beta")
+      break;
+    case 3:
+      answer = ("gamma")
+      break;
+    case 4:
+      answer = ("delta")      
+  }
+
+
+  // Only change code above this line
+  return answer;
+}
+
+caseInSwitch(1);
