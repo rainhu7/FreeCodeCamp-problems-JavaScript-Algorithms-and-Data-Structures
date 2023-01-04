@@ -1,0 +1,77 @@
+Switch 문의 여러 동일한 옵션
+문장의 break에서 문장이 생략 되면 a 를 만날 때까지 다음 문장이 실행 됩니다. 동일한 출력을 가진 여러 입력이 있는 경우 다음과 같은 명령문으로 나타낼 수 있습니다.switchcasecasebreakswitch
+
+let result = "";
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+1, 2 및 3의 사례는 모두 동일한 결과를 생성합니다.
+
+문제
+answer다음 범위에 대해 설정할 switch 문을 작성합니다 .
+1-3- Low
+4-6- Mid
+7-9-High
+
+참고:case 범위의 각 숫자에 대한 설명 이 필요합니다 .
+
+테스트
+대기중 :sequentialSizes(1)문자열을 반환해야 합니다Low
+대기중 :sequentialSizes(2)문자열을 반환해야 합니다Low
+대기중 :sequentialSizes(3)문자열을 반환해야 합니다Low
+대기중 :sequentialSizes(4)문자열을 반환해야 합니다Mid
+대기중 :sequentialSizes(5)문자열을 반환해야 합니다Mid
+대기중 :sequentialSizes(6)문자열을 반환해야 합니다Mid
+대기중 :sequentialSizes(7)문자열을 반환해야 합니다High
+대기중 :sequentialSizes(8)문자열을 반환해야 합니다High
+대기중 :sequentialSizes(9)문자열을 반환해야 합니다High
+대기중 :if또는 else문 을 사용하면 안 됩니다.
+대기중 :case9개의 진술 이 있어야 합니다 .
+
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+
+
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
+
+
+답
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;    
+  }
+
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
