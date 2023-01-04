@@ -1,0 +1,48 @@
+함수에서 부울 값 반환
+동등 연산자와의 비교에서 모든 비교 연산자가 부울 true또는 false값 을 반환한다는 것을 기억할 수 있습니다 .
+
+때때로 사람들 if/else은 비교를 위해 다음과 같은 진술을 사용합니다.
+
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+하지만 더 좋은 방법이 있습니다. 또는 를 ===반환 하므로 비교 결과를 반환할 수 있습니다.truefalse
+
+function isEqual(a, b) {
+  return a === b;
+}
+
+문제
+명령문 isLess을 제거하는 기능을 수정하십시오 .if/else
+
+테스트
+대기중 :isLess(10, 15)반환해야true
+대기중 :isLess(15, 10)반환해야false
+대기중 :if또는 else문 을 사용하면 안 됩니다.
+
+function isLess(a, b) {
+  // Only change code below this line
+  if (a < b) {
+    return true;
+  } else {
+    return false;
+  }
+  // Only change code above this line
+}
+
+isLess(10, 15);
+
+
+답
+function isLess(a, b) {
+  // Only change code below this line
+  
+    return a < b;
+  // Only change code above this line
+}
+
+isLess(10, 15);
