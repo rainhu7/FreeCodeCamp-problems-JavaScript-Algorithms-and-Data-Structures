@@ -1,0 +1,74 @@
+Switch 문에 기본 옵션 추가
+명령문 에서 switch가능한 모든 값을 명령문으로 지정하지 못할 수도 있습니다 case. 대신 default일치하는 명령문이 없을 경우 실행할 명령문을 추가할 수 있습니다 case. 체인 의 마지막 else문장 이라고 생각하세요 .if/else
+
+진술 은 default마지막 사례여야 합니다.
+
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+...
+  default:
+    defaultStatement;
+    break;
+}
+
+문제
+answer다음 조건에 대해 설정할 switch 문을 작성합니다 .
+a- apple
+b- bird
+c- cat
+default-stuff
+
+테스트
+대기중 :switchOfStuff("a")문자열을 반환해야 합니다apple
+대기중 :switchOfStuff("b")문자열을 반환해야 합니다bird
+대기중 :switchOfStuff("c")문자열을 반환해야 합니다cat
+대기중 :switchOfStuff("d")문자열을 반환해야 합니다stuff
+대기중 :switchOfStuff(4)문자열을 반환해야 합니다stuff
+대기중 :if또는 else문 을 사용하면 안 됩니다.
+대기중 :default당신은 진술 을 사용해야합니다
+대기중 :break최소 3개의 진술 이 있어야 합니다 .
+
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+
+
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);
+
+
+답
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case "a":
+      answer = "apple";
+      break;
+    case "b":
+      answer = "bird";
+      break;
+    case "c":
+      answer = "cat";
+      break;
+    default :
+      answer = "stuff";
+      break;  
+
+  }
+
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);
