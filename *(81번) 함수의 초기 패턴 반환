@@ -1,0 +1,27 @@
+함수의 초기 패턴 반환
+명령문에 도달 하면 return현재 함수의 실행이 중지되고 제어가 호출 위치로 돌아갑니다.
+
+예시
+
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFun();
+Hello위는 콘솔에 문자열을 표시하고 문자열 을 반환합니다 World. 함수가 명령문 byebye에서 종료되기 때문에 문자열 은 콘솔에 표시되지 않습니다.return
+
+문제
+또는 이 보다 작은 경우 함수가 의 값으로 즉시 종료 abTest되도록 함수를 수정합니다 .ab0undefined
+
+힌트 이것은 문자열 이 아니라 키워드
+라는 것을 기억하십시오 .undefined
+
+테스트
+대기중 :abTest(2, 2)숫자를 반환해야 합니다
+대기중 :abTest(2, 2)반환해야8
+대기중 :abTest(-2, 2)반환해야undefined
+대기중 :abTest(2, -2)반환해야undefined
+대기중 :abTest(2, 8)반환해야18
+대기중 :abTest(3, 3)반환해야12
+대기중 :abTest(0, 0)반환해야0
