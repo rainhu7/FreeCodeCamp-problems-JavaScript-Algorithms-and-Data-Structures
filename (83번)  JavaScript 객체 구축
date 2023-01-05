@@ -1,0 +1,55 @@
+JavaScript 객체 구축
+이전 에 용어를 들어 보셨을 것 object입니다.
+
+객체는 arrays인덱스를 사용하여 데이터에 액세스하고 수정하는 대신 를 통해 객체의 데이터에 액세스한다는 점을 제외하면 와 유사합니다 properties.
+
+개체는 구조화된 방식으로 데이터를 저장하는 데 유용하며 고양이와 같은 실제 개체를 나타낼 수 있습니다.
+
+다음은 샘플 고양이 개체입니다.
+
+const cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "tails": 1,
+  "enemies": ["Water", "Dogs"]
+};
+name이 예에서 모든 속성은 , legs및 와 같은 문자열로 저장됩니다 tails. 그러나 숫자를 속성으로 사용할 수도 있습니다. 다음과 같이 단일 단어 문자열 속성에 대한 따옴표를 생략할 수도 있습니다.
+
+const anotherObject = {
+  make: "Ford",
+  5: "five",
+  "model": "focus"
+};
+그러나 개체에 문자열이 아닌 속성이 있는 경우 JavaScript는 자동으로 속성을 문자열로 변환합니다.
+
+문제
+myDog속성 name(문자열), legs및 tails를 포함 하는 개를 나타내는 개체를 만듭니다 friends.
+
+name이 개체 속성 은 문자열, 숫자 및 legs배열 인 한 원하는 값으로 설정할 수 있습니다 .tailsfriends
+
+테스트
+대기중 :myDog속성을 포함 name해야 하며 string.
+대기중 :myDog속성을 포함 legs해야 하며 number.
+대기중 :myDog속성을 포함 tails해야 하며 number.
+대기중 :myDog속성을 포함 friends해야 하며 array.
+대기중 :myDog지정된 모든 속성만 포함해야 합니다.
+
+
+const myDog = {
+  // Only change code below this line
+
+
+  // Only change code above this line
+};
+
+답
+const myDog = {
+  // Only change code below this line
+  "name":"donssoo",
+  "legs":4,
+  "tails":1,
+  "friends":[]
+
+
+  // Only change code above this line
+};
