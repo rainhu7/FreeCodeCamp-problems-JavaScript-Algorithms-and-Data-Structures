@@ -1,0 +1,42 @@
+개체 속성 업데이트
+JavaScript 개체를 만든 후에는 다른 변수를 업데이트하는 것처럼 언제든지 해당 속성을 업데이트할 수 있습니다. 점 또는 대괄호 표기법을 사용하여 업데이트할 수 있습니다.
+
+예를 들어 다음을 살펴보겠습니다 ourDog.
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+그는 특히 행복한 개이므로 그의 이름을 문자열로 변경해 보겠습니다 Happy Camper. 객체의 이름 속성을 업데이트하는 방법은 다음과 같습니다. ourDog.name = "Happy Camper";또는 ourDog["name"] = "Happy Camper";이제 를 평가할 때 ourDog.name를 얻는 대신 Camper새 이름인 을 얻게 Happy Camper됩니다.
+
+문제
+myDog개체의 이름 속성을 업데이트합니다 . Coder그녀의 이름을 에서 로 바꾸자 Happy Coder. 점 또는 대괄호 표기법을 사용할 수 있습니다.
+
+테스트
+대기중 :문자열과 같도록 myDog의 속성을 업데이트해야 합니다 .nameHappy Coder
+대기중 :myDog정의 를 편집하면 안 됩니다.
+
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+
+
+답
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+myDog.name = "Happy Coder"
