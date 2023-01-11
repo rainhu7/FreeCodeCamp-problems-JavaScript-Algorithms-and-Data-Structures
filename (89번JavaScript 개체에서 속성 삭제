@@ -1,0 +1,54 @@
+JavaScript 개체에서 속성 삭제
+다음과 같이 개체에서 속성을 삭제할 수도 있습니다.
+
+delete ourDog.bark;
+예:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+위에 표시된 마지막 줄 다음에 ourDog다음과 같이 표시됩니다.
+
+{
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+}
+문제
+tails에서 속성을 삭제합니다 myDog. 점 또는 대괄호 표기법을 사용할 수 있습니다.
+
+테스트
+대기중 :에서 속성 tails을 삭제해야 합니다 myDog.
+대기중 :설정 을 수정하면 안됩니다 myDog.
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+
+답
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+delete myDog.tails
