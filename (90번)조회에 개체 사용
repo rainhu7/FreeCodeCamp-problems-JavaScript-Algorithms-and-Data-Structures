@@ -1,0 +1,89 @@
+조회에 개체 사용
+객체는 사전과 같은 키/값 저장소로 생각할 수 있습니다. switch테이블 형식 데이터가 있는 경우 문이나 if/else체인 이 아닌 개체를 사용하여 값을 조회할 수 있습니다 . 이는 입력 데이터가 특정 범위로 제한된다는 것을 알고 있을 때 가장 유용합니다.
+
+다음은 기사 객체의 예입니다.
+
+const article = {
+  "title": "How to create objects in JavaScript",
+  "link": "https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/",
+  "author": "Kaashan Hussain",
+  "language": "JavaScript",
+  "tags": "TECHNOLOGY",
+  "createdAt": "NOVEMBER 28, 2018"
+};
+
+const articleAuthor = article["author"];
+const articleLink = article["link"];
+
+const value = "title";
+const valueLookup = article[value];
+articleAuthor는 문자열 Kaashan Hussain이고, articleLink는 문자열 https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/이고, valueLookup은 문자열 How to create objects in JavaScript입니다.
+
+문제
+switch 문을 라는 객체로 변환합니다 lookup. 이를 사용하여 관련 문자열을 조회 하고 변수 val에 할당합니다 .result
+
+테스트
+대기중 :phoneticLookup("alpha")문자열과 같아야 합니다.Adams
+대기중 :phoneticLookup("bravo")문자열과 같아야 합니다.Boston
+대기중 :phoneticLookup("charlie")문자열과 같아야 합니다.Chicago
+대기중 :phoneticLookup("delta")문자열과 같아야 합니다.Denver
+대기중 :phoneticLookup("echo")문자열과 같아야 합니다.Easy
+대기중 :phoneticLookup("foxtrot")문자열과 같아야 합니다.Frank
+대기중 :phoneticLookup("")같아야 한다undefined
+대기중 :return진술 을 수정하면 안 됩니다.
+대기중 :, 또는 문 을 사용 case하면 안 됩니다.switchif
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+답
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  var lookup = {
+      "alpha": "Adams",
+      "bravo": "Boston",
+      "charlie": "Chicago",
+      "delta": "Denver",
+      "echo": "Easy",
+      "foxtrot": "Frank"
+
+    };
+    result = lookup[val];  
+  
+
+  // Only change code above this line
+  return result;
+}
+
+
