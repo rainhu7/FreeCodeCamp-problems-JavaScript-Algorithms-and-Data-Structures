@@ -1,0 +1,46 @@
+JavaScript 개체에 새 속성 추가
+기존 JavaScript 객체를 수정하는 것과 동일한 방식으로 새 속성을 추가할 수 있습니다.
+
+bark다음에 속성을 추가하는 방법은 다음과 같습니다 ourDog.
+
+ourDog.bark = "bow-wow";
+또는
+
+ourDog["bark"] = "bow-wow";
+이제 우리가 를 평가할 때 ourDog.bark그의 짖는 소리를 얻을 것 bow-wow입니다.
+
+예:
+
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+
+문제
+bark속성을 추가하고 myDog"woof"와 같은 개 소리로 설정합니다. 점 또는 대괄호 표기법을 사용할 수 있습니다.
+
+테스트
+대기중 :에 속성 bark을 추가해야 합니다 myDog.
+대기중 :bark의 초기화에 추가하면 안됩니다 myDog.
+
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+
+답
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof"
